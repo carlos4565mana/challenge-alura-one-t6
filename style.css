@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body{
   background: #ced3e6;
   font-family: 'Inter', sans-serif;
@@ -102,5 +103,76 @@ footer{
 .linkedin:hover, .github:hover{
   font-size: 22px;
   text-decoration: underline;
+}
+/* Responsividade dispositivos moveis */
+@media screen  and (max-width: 480px)  {
+  .container, .entrada_texto, .saida_texto{
+    width: 100%;
+  }
+  .container, .entrada_texto_buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .entrada_texto_buttons_cripto, .entrada_texto_buttons_descripto{
+    margin: 5px 0;
+    width: auto;
+  }
+  .entrada_texto_digitar textarea{
+    height: 350px;
+  }
+  .entrada_texto_buttons_cripto:hover, .entrada_texto_buttons_descripto:hover,.copiar:hover{
+    transform: scale(1.0);
+  }
+  #img{
+    display: none;
+  }
+  .saida_texto_resultado_vazio{
+    margin-top: 5px;
+    padding: 30px 0px;
+    width: auto;
+  }
+  .saida_texto_ok{
+    margin-top: 5px;
+    width: auto;
+  }
+  .saida_texto_ok textarea{
+    height: 100px;
+  }
+}
+@media screen and(min-width: 418px) and (max-width:1199px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container,.entrada_texto, .saida_texto{
+    width: auto;
+  }
+  .entrada_texto_buttons_cripto, .entrada_texto_buttons_descripto{
+    margin: 5px;
+    width: auto;
+  }
+  .entrada_texto_digitar textarea{
+    height: 200px;
+  }
+  .entrada_texto_buttons_cripto:hover, .entrada_texto_buttons_descripto:hover,.copiar:hover{
+    transform: scale(1.0);
+  }
+  #img {
+    display: none;
+}
+.saida_texto_resultado_vazio{
+  margin-top: 10px;
+  padding: 30px 0px;
+  width: auto;
+}
+.saida_texto_ok{
+  margin-top: 10px;
+  width: auto;
+}
+.saida_texto_ok textarea{
+  height: 100px;
+}
 }
 
