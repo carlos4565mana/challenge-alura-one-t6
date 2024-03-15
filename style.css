@@ -89,6 +89,7 @@ header{
 }
 footer{
   margin: 2%;
+ margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,7 +155,7 @@ footer{
     width: auto;
   }
   .entrada_texto_digitar textarea{
-    height: 200px;
+    height: 150px;
   }
   .entrada_texto_buttons_cripto:hover, .entrada_texto_buttons_descripto:hover,.copiar:hover{
     transform: scale(1.0);

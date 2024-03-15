@@ -23,10 +23,10 @@
         </div>
         <p>ⓘApenas letras minúsculas e sem acento.</p>
         <div class="entrada_texto_buttons">
-          <button class="entrada_texto_buttons_cripto" onclick="criptografar">
+          <button class="entrada_texto_buttons_cripto" onclick="btnEncrypt()">
             Criptografar
           </button>
-          <button class="entrada_texto_buttons_descripto" onclick="descriptografar">
+          <button class="entrada_texto_buttons_descripto" onclick="btnDescrypt()">
             Descriptografar
           </button>
         </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="saida_texto_ok">
           <textarea id="text-output" cols="30" rows="20"></textarea>
-          <button class="copiar" onclick="copiarTexto()">Copiar texto.</button>
+          <button class="copiar" onclick="copyText()">Copiar texto.</button>
         </div>
       </div>
       
@@ -66,6 +66,7 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
   
 </body>
 </html>
