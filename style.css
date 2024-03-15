@@ -13,6 +13,7 @@ header{
 .container{
   display: flex;
   width: 1200px;
+  height: 90%;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -87,24 +88,48 @@ header{
 .entrada_texto_buttons_cripto:hover, .entrada_texto_buttons_descripto:hover, .copiar:hover{
   transform: scale(1.1);
 }
+
 footer{
-  margin: 2%;
- margin-top: 60px;
+  margin-top: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 20px;
-  color: #0A3871;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  background-color: #0A3871;
+  gap: 0;
+  padding: 32px 96px 16px;
 }
-.redes_sociais{
+footer a, footer p{
   text-decoration: none;
-  margin: 5px;
-  color: #0A3871;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+}
+.footer_redes_sociais, .footer_alura{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:32px ;
+
+}
+.footer_redes_sociais_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  gap: 16px;
+}
+.footer_redes_sociais_icons_icon{
+  cursor: pointer;
 }
 .linkedin:hover, .github:hover{
   font-size: 22px;
   text-decoration: underline;
 }
+
+
 /* Responsividade dispositivos moveis */
 @media screen  and (max-width: 480px)  {
   .container, .entrada_texto, .saida_texto{
@@ -113,6 +138,8 @@ footer{
   .container, .entrada_texto_buttons{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 16px;
     text-align: center;
   }
   .entrada_texto_buttons_cripto, .entrada_texto_buttons_descripto{
@@ -139,6 +166,27 @@ footer{
   }
   .saida_texto_ok textarea{
     height: 100px;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0A3871;
+    height: 10%;
+    padding: 48px 32px 16px;
+    gap: 0
+  }
+  .footer_redes_sociais, .footer_alura{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer_redes_sociais{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
   }
 }
 @media screen and(min-width: 418px) and (max-width:1199px) {
