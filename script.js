@@ -2,6 +2,7 @@ const textInput = document.querySelector('#text_input');
 const textOutput = document.querySelector('#text-output');
 let emptyContentArea = document.querySelector('.saida_texto_resultado_vazio');
 let contentAreaOk = document.querySelector('.saida_texto_ok');
+const copyButton = document.querySelector('#copy')
 
 emptyContentArea.style.display = 'block';
 contentAreaOk.style.display = 'none';
@@ -30,12 +31,11 @@ const btnDescrypt = () => {
   }
 }
 
-const copyText = () =>{
+copyButton.addEventListener('click', ()=>{
   textOutput.select();
   textOutput.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  textOutput.value = '';
-}
+})
 
 
 const validate = (string) =>{
